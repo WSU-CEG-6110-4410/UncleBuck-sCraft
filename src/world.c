@@ -22,34 +22,23 @@ void create_world(int p, int q, world_func func, void *arg) {
                 h = t;
                 w = 2;
             }
-                /**
-                * Logic to show sand & grass in game
-                */
+            // sand and grass terrain
             for (int y = 0; y < h; y++) {
                 func(x, y, z, w * flag, arg);
             }
             if (w == 1) {
                 if (SHOW_PLANTS) {
-                    
-                /**
-                * Logic to show grass in game if plants are enabled
-                */
+                    // grass
                     if (simplex2(-x * 0.1, z * 0.1, 4, 0.8, 2) > 0.6) {
                         func(x, h, z, 17 * flag, arg);
                     }
-
-                    /**
-                    * Logic to show trees in game if plants are enabled
-                     */                   
+                    // flowers
                     if (simplex2(x * 0.05, -z * 0.05, 4, 0.8, 2) > 0.7) {
                         int w = 18 + simplex2(x * 0.1, z * 0.1, 4, 0.8, 2) * 7;
                         func(x, h, z, w * flag, arg);
                     }
                 }
-
-                /**
-                * Logic to show trees in game
-                */
+                // trees
                 int ok = SHOW_TREES;
                 if (dx - 4 < 0 || dz - 4 < 0 ||
                     dx + 4 >= CHUNK_SIZE || dz + 4 >= CHUNK_SIZE)
@@ -73,10 +62,7 @@ void create_world(int p, int q, world_func func, void *arg) {
                     }
                 }
             }
-            
-            /**
-             * logic to show clouds in game
-            */
+            // clouds
             if (SHOW_CLOUDS) {
                 for (int y = 64; y < 72; y++) {
                     if (simplex3(
