@@ -28,9 +28,13 @@
 
 // key bindings
 #define CRAFT_KEY_FORWARD 'W'
+#define CRAFT_KEY_FORWARD2 'O'
 #define CRAFT_KEY_BACKWARD 'S'
+#define CRAFT_KEY_BACKWARD2 'L'
 #define CRAFT_KEY_LEFT 'A'
+#define CRAFT_KEY_LEFT2 'K'
 #define CRAFT_KEY_RIGHT 'D'
+#define CRAFT_KEY_RIGHT2 ';'
 #define CRAFT_KEY_JUMP GLFW_KEY_SPACE
 #define CRAFT_KEY_FLY GLFW_KEY_TAB
 #define CRAFT_KEY_OBSERVE 'O'
