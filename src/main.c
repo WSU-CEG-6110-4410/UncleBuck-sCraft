@@ -224,6 +224,15 @@ void get_motion_vector(int flying, int sz, int sx, float rx, float ry,
         *vy = y;
         *vz = sinf(rx + strafe) * m;
     }
+    
+    /// Hold down L alt key, increases speed
+    /// no pre or post conditions
+
+    if (glfwGetKey(g->window, CRAFT_KEY_SPRINT)) {
+        *vx = 2 * cosf(rx + strafe);
+        *vy = 0;
+        *vz = 2 * sinf(rx + strafe);
+    }
     else {
         *vx = cosf(rx + strafe);
         *vy = 0;
