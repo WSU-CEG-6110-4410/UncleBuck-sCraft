@@ -2418,10 +2418,14 @@ void handle_movement(double dt) {
         g->ortho = glfwGetKey(g->window, CRAFT_KEY_ORTHO) ? 64 : 0;
         g->fov = glfwGetKey(g->window, CRAFT_KEY_ZOOM) ? 15 : 65;
         if (glfwGetKey(g->window, CRAFT_KEY_FORWARD)) sz--;
-        if (glfwGetKey(g->window, CRAFT_KEY_BACKWARD)) sz++;
-        if (glfwGetKey(g->window, CRAFT_KEY_LEFT)) sx--;
-        if (glfwGetKey(g->window, CRAFT_KEY_RIGHT)) sx++;
-        if (glfwGetKey(g->window, GLFW_KEY_LEFT)) s->rx -= m;
+        if (glfwGetKey(g->window, CRAFT_KEY_FORWARD2)) sz--;
+        if (glfwGetKey(g->window, CRAFT_KEY_BACKWARD))sz++;
+        if (glfwGetKey(g->window, CRAFT_KEY_BACKWARD2))sz++;
+        if (glfwGetKey(g->window, CRAFT_KEY_LEFT))sx--;
+        if (glfwGetKey(g->window, CRAFT_KEY_LEFT2))sx--;
+        if (glfwGetKey(g->window, CRAFT_KEY_RIGHT))sx++;
+        if (glfwGetKey(g->window, CRAFT_KEY_RIGHT2))sx++;
+        if (glfwGetKey(g->window, GLFW_KEY_LEFT))s->rx -= m;
         if (glfwGetKey(g->window, GLFW_KEY_RIGHT)) s->rx += m;
         if (glfwGetKey(g->window, GLFW_KEY_UP)) s->ry += m;
         if (glfwGetKey(g->window, GLFW_KEY_DOWN)) s->ry -= m;
