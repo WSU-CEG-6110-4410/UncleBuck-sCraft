@@ -111,6 +111,7 @@ the client.
 - Backquote (`) to write text on any block (signs).
 - Arrow keys emulate mouse movement.
 - Enter emulates mouse click.
+- Hold left Alt key to travel at twice the speed.
 
 ### Chat Commands
 
