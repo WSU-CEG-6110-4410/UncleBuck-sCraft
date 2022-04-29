@@ -60,7 +60,7 @@ const int items[] = {
     DIAMOND,
     TOPAZ
 };
-
+//! {issue} https://github.com/WSU-CEG-6110-4410/UncleBuck-sCraft/issues/44
 const int item_count = sizeof(items) / sizeof(int);
 
 const int blocks[256][6] = {
