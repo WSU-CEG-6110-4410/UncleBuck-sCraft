@@ -59,6 +59,7 @@
 #define COLOR_31 63
 #define DIAMOND 64
 #define TOPAZ 65
+#define GOLD 66
 
 extern const int items[];
 extern const int item_count;
