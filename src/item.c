@@ -56,9 +56,11 @@ const int items[] = {
     COLOR_28,
     COLOR_29,
     COLOR_30,
-    COLOR_31
+    COLOR_31,
+    DIAMOND,
+    TOPAZ
 };
-
+//! {issue} https://github.com/WSU-CEG-6110-4410/UncleBuck-sCraft/issues/44
 const int item_count = sizeof(items) / sizeof(int);
 
 const int blocks[256][6] = {
@@ -127,6 +129,8 @@ const int blocks[256][6] = {
     {205, 205, 205, 205, 205, 205}, // 61
     {206, 206, 206, 206, 206, 206}, // 62
     {207, 207, 207, 207, 207, 207}, // 63
+    {144, 144, 144, 144, 144, 144}, // Diamond 
+    
 };
 
 const int plants[256] = {
