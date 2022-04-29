@@ -57,6 +57,7 @@
 #define COLOR_29 61
 #define COLOR_30 62
 #define COLOR_31 63
+#define DIAMOND 64
 
 extern const int items[];
 extern const int item_count;
