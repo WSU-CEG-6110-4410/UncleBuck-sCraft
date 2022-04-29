@@ -56,7 +56,9 @@ const int items[] = {
     COLOR_28,
     COLOR_29,
     COLOR_30,
-    COLOR_31
+    COLOR_31,
+    DIAMOND,
+    TOPAZ
 };
 
 const int item_count = sizeof(items) / sizeof(int);
@@ -127,6 +129,8 @@ const int blocks[256][6] = {
     {205, 205, 205, 205, 205, 205}, // 61
     {206, 206, 206, 206, 206, 206}, // 62
     {207, 207, 207, 207, 207, 207}, // 63
+    {144, 144, 144, 144, 144, 144}, // Diamond 
+    
 };
 
 const int plants[256] = {
