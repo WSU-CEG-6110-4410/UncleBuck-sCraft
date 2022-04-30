@@ -3,6 +3,7 @@
 
 const int items[] = {
     // items the user can build
+    // Add here to add into game
     GRASS,
     SAND,
     STONE,
@@ -58,7 +59,8 @@ const int items[] = {
     COLOR_30,
     COLOR_31,
     DIAMOND,
-    TOPAZ
+    TOPAZ,
+    GOLD,
 };
 //! {issue} https://github.com/WSU-CEG-6110-4410/UncleBuck-sCraft/issues/44
 const int item_count = sizeof(items) / sizeof(int);
@@ -129,7 +131,8 @@ const int blocks[256][6] = {
     {205, 205, 205, 205, 205, 205}, // 61
     {206, 206, 206, 206, 206, 206}, // 62
     {207, 207, 207, 207, 207, 207}, // 63
-    {144, 144, 144, 144, 144, 144}, // Diamond 
+    {144, 144, 144, 144, 144, 144}, // Diamond
+    {146, 146, 146, 146, 146, 146}, // Gold
     
 };
 
